@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    ...
+  </head>
+  <body id="app">
+    <!-- <%= @inner_content %> -->
+    <!-- <script type="module" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>  -->
+    <!-- if development -->
+    <script type="module" src="/@vite/client"></script>
+    <script type="module" src="/src/app.ts"></script>
+  </body>
+</html>
