@@ -4,8 +4,10 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [svelte()],
+  optimizeDeps: {
+    include: ['@inertiajs/inertia', '@inertiajs/inertia-svelte'],
+  },
   build: {
-    // generate manifest.json in outDir
     manifest: true,
     rollupOptions: {
       // overwrite default .html entry

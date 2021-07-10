@@ -1,6 +1,8 @@
 const { tailwindExtractor } = require('tailwindcss/lib/lib/purgeUnusedStyles')
 
 module.exports = {
+  // mode: 'jit',
+  darkMode: false, // or 'media' or 'class'
   purge: {
     content: ['./src/**/*.{html,js,svelte,ts}'],
     options: {
@@ -16,20 +18,7 @@ module.exports = {
     },
   },
   theme: {
-    extend: {
-      fontFamily: [
-        '-apple-system',
-        'BlinkMacSystemFont',
-        'Segoe UI',
-        'Roboto',
-        'Oxygen',
-        'Ubuntu',
-        'Cantarell',
-        'Open Sans',
-        'Helvetica Neue',
-        'sans-serif',
-      ],
-    },
+    extend: {},
   },
   variants: {
     extend: {},

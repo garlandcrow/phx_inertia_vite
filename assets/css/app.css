@@ -4,3 +4,13 @@
 /* purgecss end ignore */
 
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-gray-800;
+  }
+  body,
+  #app {
+    @apply h-screen w-screen;
+  }
+}
