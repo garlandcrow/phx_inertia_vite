@@ -33,7 +33,7 @@ defmodule PhxInertiaVite.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:snowpack_static_plug, github: "garlandcrow/snowpack_static_plug", branch: "snowpack"},
+      {:dev_asset_proxy_plug, github: "garlandcrow/dev_asset_proxy_plug"},
       {:inertia_phoenix, "~> 0.3.0"},
       {:phoenix, "~> 1.5.9"},
       {:phoenix_html, "~> 2.11"},

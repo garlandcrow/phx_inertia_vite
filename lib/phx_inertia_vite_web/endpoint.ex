@@ -16,7 +16,7 @@ defmodule PhxInertiaViteWeb.Endpoint do
 
   socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
 
-  plug SnowpackStatic.Plug,
+  plug DevAssetProxy.Plug,
     port: 3000,
     assets: ~w(public web_modules @vite @inertiajs node_modules css src __vite_ping),
     env: Mix.env()
