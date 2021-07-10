@@ -18,7 +18,7 @@ defmodule PhxInertiaViteWeb.Endpoint do
 
   plug DevAssetProxy.Plug,
     port: 3000,
-    assets: ~w(public web_modules @vite @inertiajs node_modules css src __vite_ping),
+    assets: ~w(@vite node_modules css src __vite_ping),
     env: Mix.env()
 
   # Serve at "/" the static files from "priv/static" directory.
