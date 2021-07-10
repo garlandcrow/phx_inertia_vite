@@ -1,7 +1,7 @@
 const { tailwindExtractor } = require('tailwindcss/lib/lib/purgeUnusedStyles')
 
 module.exports = {
-  // mode: 'jit',
+  mode: 'jit',
   darkMode: false, // or 'media' or 'class'
   purge: {
     content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -18,10 +18,26 @@ module.exports = {
     },
   },
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#0689d8',
+        gray: {
+          100: '#f5f5f5',
+          200: '#eeeeee',
+          300: '#e0e0e0',
+          400: '#bdbdbd',
+          500: '#9e9e9e',
+          600: '#757575',
+          700: '#616161',
+          800: '#424242',
+          900: '#33373D',
+          1000: '#212121',
+        },
+      },
+    },
   },
   variants: {
-    extend: {},
+    extend: { backgroundColor: ['hover'] },
   },
   plugins: [],
 }
